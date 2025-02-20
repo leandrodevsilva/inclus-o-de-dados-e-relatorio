@@ -1,51 +1,59 @@
-Waste Management System
+# Waste Management System
 
-Description
+This project is a simple Waste Management System implemented in C. It allows users to manage client information, track monthly waste quantities and costs, and generate individual and global reports. The system includes user authentication, client registration, and data management functionalities.
 
-This project is a Waste Management System developed in C. It provides a simple interface for user authentication, client registration, waste data management, and report generation. The system allows businesses to track their waste disposal and associated costs on a monthly basis.
+## Compilation
 
-Features
+Compile the program using a C compiler (e.g., gcc).
 
-User authentication (Login & Registration)
-
-Client registration with company details
-
-Monthly waste data tracking (quantity & cost)
-
-Individual client reports
-
-Global waste summary report
-
-Installation
-
-Clone the repository or download the main.c file.
-
-Compile the program using a C compiler (e.g., GCC):
-
+```bash
 gcc main.c -o waste_management
+```
 
-Run the compiled program:
+## Execution:
 
-./waste_management
+```bash
+waste_management
+```
 
-Usage
+## Example
 
-Start the system and register a user.
+1. Start the program and register a new user.
 
-Log in with the registered credentials.
+2. Log in with the registered credentials.
 
-Register clients and input their waste management details.
+3. Register a new client with the required details.
 
-Update monthly waste data as needed.
+4. Update monthly waste data for the client.
 
-Generate individual or global reports.
+5. Generate an individual report to view the client's waste data.
 
-Exit the system when finished.
+6. Generate a global report to view summarized data for all clients.
 
-Dependencies
+## Menu Options
 
-Standard C Library (stdio.h, string.h)
+- Login: Log in with a username and password.
 
-Author
+- Register User: Register a new user.
 
-Developed by Leandro Augusto da Silva.
+- Register Client: Register a new client.
+
+- Update Monthly Data: Update waste data for a specific month.
+
+- Generate Individual Report: Generate a report for a specific client.
+
+- Generate Global Report: Generate a summary report for all clients.
+
+- Exit: Exit the program.
+
+## Notes
+
+- The program supports up to 50 clients (MAX_CLIENTES).
+
+- The system is designed for simplicity and does not include persistent storage (data is lost when the program exits).
+
+- Error handling is minimal; ensure inputs are correct to avoid unexpected behavior.
+
+## License
+
+This project is made by Leandro Augusto da Silva, an open-source and available. Feel free to modify and distribute it as needed.
